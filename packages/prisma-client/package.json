@@ -1,0 +1,35 @@
+{
+  "name": "@bh/prisma-client",
+  "description": "Shared prisma client",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.(js|ts)\"",
+    "lint": "eslint src --ext .js,.ts",
+    "lint:fix": "eslint src --fix --ext .js,.ts",
+    "test": "jest --config jest.config.js",
+    "test:watch": "jest --config jest.config.js --watch",
+    "prepare": "yarn build",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate:dev": "prisma migrate dev",
+    "prisma:migrate:prod": "prisma migrate prod"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.8.0"
+  },
+  "devDependencies": {
+    "@types/jest": "29.2.4",
+    "@typescript-eslint/eslint-plugin": "5.46.0",
+    "@typescript-eslint/parser": "5.46.0",
+    "eslint": "8.29.0",
+    "eslint-plugin-jest": "27.1.6",
+    "jest": "29.3.1",
+    "prettier": "2.8.1",
+    "standard-version": "^9.5.0",
+    "ts-jest": "29.0.3",
+    "typescript": "4.9.4"
+  }
+}

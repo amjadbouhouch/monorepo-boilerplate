@@ -1,0 +1,10 @@
+.git
+.idea
+.vscode
+.dockerignore
+.scannerwork
+.storybook
+.eslintcache
+node_modules
+build
+Dockerfile

@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "dev": "lerna run dev --scope={@bh/api,@bh/web}",
+    "test": "lerna run test",
+    "build:prisma-client": "lerna run build --scope=@bh/prisma-client",
+    "bootstrap": "lerna run bootstrap"
+  },
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.3.0"
+  }
+}
